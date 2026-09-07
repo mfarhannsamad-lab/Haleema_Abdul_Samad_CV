@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haleema Abdul Samad - Data Analyst Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        .name {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 8px;
+            letter-spacing: 0.5px;
+        }
+        .title {
+            font-size: 20px;
+            color: #e0e7ff;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+            font-size: 13px;
+            color: #f0f4ff;
+            margin-top: 15px;
+        }
+        .contact-info span {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .contact-info a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .content {
+            padding: 40px;
+        }
+        .section {
+            margin-bottom: 35px;
+        }
+        .section-title {
+            font-size: 16px;
+            font-weight: bold;
+            color: #667eea;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .summary {
+            text-align: justify;
+            line-height: 1.8;
+            color: #555;
+            font-size: 14px;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+        }
+        .skill-item {
+            padding: 10px 12px;
+            background-color: #f0f4ff;
+            border-left: 3px solid #667eea;
+            font-size: 13px;
+            color: #333;
+            border-radius: 4px;
+        }
+        .job {
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        .job:last-child {
+            border-bottom: none;
+        }
+        .company {
+            font-size: 15px;
+            color: #667eea;
+            font-weight: bold;
+            margin-bottom: 3px;
+        }
+        .job-title {
+            font-weight: 600;
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 5px;
+        }
+        .job-meta {
+            font-size: 12px;
+            color: #888;
+            margin-bottom: 10px;
+            font-style: italic;
+        }
+        .job-description {
+            margin-left: 15px;
+            color: #555;
+            font-size: 13px;
+        }
+        .job-description li {
+            margin-bottom: 6px;
+            line-height: 1.6;
+        }
+        .edu {
+            margin-bottom: 15px;
+            padding: 12px;
+            background-color: #f0f4ff;
+            border-radius: 4px;
+            border-left: 3px solid #667eea;
+        }
+        .edu-degree {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 3px;
+            font-size: 14px;
+        }
+        .edu-meta {
+            font-size: 12px;
+            color: #888;
+        }
+        .language-tags {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .language-tag {
+            background-color: #f0f4ff;
+            color: #667eea;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 500;
+            border: 1px solid #667eea;
+        }
+        .status-badge {
+            display: inline-block;
+            background-color: #dcfce7;
+            color: #166534;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 500;
+            margin-top: 10px;
+        }
+        .print-note {
+            text-align: center;
+            padding: 15px;
+            background-color: #f0f4ff;
+            color: #667eea;
+            font-size: 12px;
+            margin-top: 20px;
+            border-radius: 4px;
+        }
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                max-width: 100%;
+                border-radius: 0;
+            }
+            .print-note {
+                display: none;
+            }
+        }
+        @media (max-width: 600px) {
+            .container {
+                border-radius: 0;
+            }
+            .header {
+                padding: 25px;
+            }
+            .name {
+                font-size: 26px;
+            }
+            .content {
+                padding: 20px;
+            }
+            .contact-info {
+                flex-direction: column;
+                gap: 8px;
+                text-align: center;
+            }
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="name">HALEEMA ABDUL SAMAD</div>
+            <div class="title">Data Analyst</div>
+            <div class="contact-info">
+                <span>📱 +916282413340 / +97431187257</span>
+                <span>📧 haleemaabdussamad4@gmail.com</span>
+                <span>📍 Kannur, India</span>
+            </div>
+            <div class="status-badge">✓ Valid QID, Transferable Visa</div>
+        </div>
+
+        <div class="content">
+            <div class="section">
+                <div class="section-title">Professional Summary</div>
+                <div class="summary">
+                    Detail-oriented and analytical Data Analyst with hands-on experience in Excel, SQL, Python, Power BI, and Tableau. Skilled in data cleaning, visualization, dashboard creation, and transforming raw data into meaningful business insights. Passionate about solving business problems through data-driven decision making and delivering clear, impactful reports.
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">Core Skills</div>
+                <div class="skills-grid">
+                    <div class="skill-item">Data Cleaning & Preprocessing</div>
+                    <div class="skill-item">Dashboard Development</div>
+                    <div class="skill-item">Data Visualization</div>
+                    <div class="skill-item">Business Reporting</div>
+                    <div class="skill-item">Regression Analysis</div>
+                    <div class="skill-item">Hypothesis Testing</div>
+                    <div class="skill-item">Excel, SQL, Python</div>
+                    <div class="skill-item">Power BI, Tableau</div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">Professional Experience</div>
+                
+                <div class="job">
+                    <div class="company">Franchise Media, Calicut</div>
+                    <div class="job-title">Content Writer</div>
+                    <div class="job-meta">September 2025 - Present</div>
+                    <ul class="job-description">
+                        <li>Created engaging and audience-focused content for digital and media platforms</li>
+                        <li>Developed written content for social media, promotional campaigns, and brand communication</li>
+                        <li>Worked on content planning, editing, and maintaining consistency in tone and messaging</li>
+                        <li>Collaborated with team members to deliver creative and timely content</li>
+                        <li>Improved communication and research skills through regular content development</li>
+                    </ul>
+                </div>
+
+                <div class="job">
+                    <div class="company">Techolas Technologies</div>
+                    <div class="job-title">Data Analyst Intern</div>
+                    <div class="job-meta">August 2025 - September 2025</div>
+                    <ul class="job-description">
+                        <li>Assisted in collecting, cleaning, and preprocessing datasets for analytical projects and reporting</li>
+                        <li>Created dashboards and reports using Excel, Python, and visualization tools to present actionable insights</li>
+                        <li>Supported business analysis by identifying trends and patterns from datasets</li>
+                        <li>Worked with structured data to improve reporting accuracy and efficiency</li>
+                        <li>Collaborated with team members on data-driven solutions and presentation preparation</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">Education</div>
+                <div class="edu">
+                    <div class="edu-degree">Bachelor of Commerce (B. Com)</div>
+                    <div class="edu-meta">NAM College Kallikkandy, Kannur | 2022 - 2025</div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">Languages</div>
+                <div class="language-tags">
+                    <span class="language-tag">English</span>
+                    <span class="language-tag">Hindi</span>
+                    <span class="language-tag">Malayalam</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="print-note">
+            💡 Tip: Press Ctrl+P (or Cmd+P on Mac) to print or save as PDF
+        </div>
+    </div>
+</body>
+</html>
